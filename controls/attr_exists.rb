@@ -1,4 +1,4 @@
-title 'Tests to confirm acl exists'
+title 'Tests to confirm attr exists'
 
 plan_origin = ENV['HAB_ORIGIN']
 plan_name = input('plan_name', value: 'attr')
@@ -7,7 +7,8 @@ control 'core-plans-attr-exists' do
   impact 1.0
   title 'Ensure attr exists'
   desc '
-  '
+  Verify attr by ensuring /bin/getfattr exists'
+  
   plan_installation_directory = command("hab pkg path #{plan_origin}/#{plan_name}")
   describe plan_installation_directory do
     its('exit_status') { should eq 0 }

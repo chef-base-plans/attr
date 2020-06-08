@@ -1,4 +1,4 @@
-title 'Tests to confirm acl works as expected'
+title 'Tests to confirm attr works as expected'
 
 plan_origin = ENV['HAB_ORIGIN']
 plan_name = input('plan_name', value: 'attr')
@@ -7,7 +7,10 @@ control 'core-plans-attr-works' do
   impact 1.0
   title 'Ensure attr works as expected'
   desc '
+  Verify attr by ensuring (1) its installation directory exists and (2) that
+  it returns the expected version
   '
+  
   plan_installation_directory = command("hab pkg path #{plan_origin}/#{plan_name}")
   describe plan_installation_directory do
     its('exit_status') { should eq 0 }
