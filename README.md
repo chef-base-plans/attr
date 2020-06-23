@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.attr?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=69&branchName=master)
+[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.attr?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=92&branchName=master)
 
 # attr
 
@@ -39,6 +39,22 @@ will add the following binaries to the PATH:
 * /bin/attr
 * /bin/getfattr
 * /bin/setfattr
+
+For example:
+
+```bash
+$ hab pkg install core/attr --binlink
+» Installing core/attr
+☁ Determining latest version of core/attr in the 'stable' channel
+→ Using core/attr/2.4.48/20200305230504
+★ Install of core/attr/2.4.48/20200305230504 complete with 0 new packages installed.
+» Binlinking attr from core/attr/2.4.48/20200305230504 into /bin
+★ Binlinked attr from core/attr/2.4.48/20200305230504 to /bin/attr
+» Binlinking getfattr from core/attr/2.4.48/20200305230504 into /bin
+★ Binlinked getfattr from core/attr/2.4.48/20200305230504 to /bin/getfattr
+» Binlinking setfattr from core/attr/2.4.48/20200305230504 into /bin
+★ Binlinked setfattr from core/attr/2.4.48/20200305230504 to /bin/setfattr
+```
 
 #### Using an example binary
 
