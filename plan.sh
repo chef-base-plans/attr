@@ -1,12 +1,12 @@
 pkg_name=attr
 pkg_origin=core
-pkg_version=2.4.48
+pkg_version=2.5.1
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_description="Commands for Manipulating Filesystem Extended Attributes"
 pkg_upstream_url="https://savannah.nongnu.org/projects/attr/"
 pkg_license=('GPL-2.0-or-later')
 pkg_source="http://download.savannah.gnu.org/releases/${pkg_name}/${pkg_name}-${pkg_version}.tar.gz"
-pkg_shasum="5ead72b358ec709ed00bbf7a9eaef1654baad937c001c044fe8b74c57f5324e7"
+pkg_shasum="bae1c6949b258a0d68001367ce0c741cebdacdd3b62965d17e5eb23cd78adaf8"
 pkg_deps=(
   core/glibc
 )
